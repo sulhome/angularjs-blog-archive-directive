@@ -1,0 +1,22 @@
+{
+  "name": "angular-blog-archive-directive",
+  "version": "1.0.0",
+  "authors": [
+    "Sul Aga <sul@sulhome.com>"
+  ],
+  "description": "AngularJs directive to display blog archive in a hierarchical format",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "underscore": "~1.8.3"
+  }
+}

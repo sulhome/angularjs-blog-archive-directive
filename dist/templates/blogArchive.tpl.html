@@ -1,0 +1,32 @@
+﻿<div class="panel panel-primary blog-archive-panel">
+    <div class="panel-heading blog-archive-panel-heading">
+        <h3 class="panel-title blog-archive-panel-title">
+            Archive <span class="badge">{{totalBlogs}}</span>
+        </h3>
+    </div>
+    <div class="panel-body blog-archive-panel-body">
+        <ul>
+            <li ng-repeat="yearGroup in archive">
+                <div class="yearGroup" ng-click="toggleDisplay('arch_' + yearGroup.yearName)">
+                    {{yearGroup.yearName}} <span class="badge">{{yearGroup.yearTotalBlogs}}</span>
+                </div>
+
+                <ul style="display:none;" id="arch_{{yearGroup.yearName}}">
+                    <li ng-repeat="monthGroup in yearGroup.months">
+
+                        <div class="monthGroup" ng-click="toggleDisplay('arch_' + yearGroup.yearName + '_' + monthGroup.monthName)">
+                            {{monthGroup.monthName}} <span class="badge">{{monthGroup.monthBlogs.length}}</span>
+                        </div>
+
+                        <ul style="display:none;" id="arch_{{yearGroup.yearName}}_{{monthGroup.monthName}}">
+                            <li>
+                                <a ng-repeat="blog in monthGroup.monthBlogs" href="{{blog.url}}">{{blog.title}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</div>

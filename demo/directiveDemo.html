@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="demoModule">
+
+<head>
+	<title>typeahead with ddl and add item if not exist</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link  rel="stylesheet" type="text/css" href="/style/blogArchiveStyle.css">
+	<script src="/js/angular.js"></script>
+	<script src="/js/underscore.js"></script>
+	<script src="/app/app.js"></script>
+	<script src="/app/demoOnlyCtrl.js"></script>
+	<script src="/blogArchive.js"></script>	
+</head>
+
+<body>
+	<div class="container" ng-controller="demoOnlyCtrl as vm" style="margin-top:20px;">
+		<div class="col-sm-6">
+			<h2>AngularJS blog archive Directive demo</h2>
+			<blog-archive blogs="vm.blogs"></blog-archive>
+		</div>
+	</div>
+</body>
+
+</html>

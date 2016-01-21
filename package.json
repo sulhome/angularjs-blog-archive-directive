@@ -1,0 +1,15 @@
+{
+  "name": "angular-blog-archive-directive",
+  "version": "1.0.0",
+  "description": "AngularJs directive to display blog archive in a hierarchical format",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sul Aga",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
